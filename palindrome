@@ -1,13 +1,14 @@
 var str="madam";
+var length=Math.floor(str.length/2);
 var N=str.length-1;
 for(i=0;i<str.length;i++){
-for(j=N;j>=0;j--){
+for(j=N;(j>i && j<=N);j--){
 if(str[i]==str[j]){
 count++;
 }
 }
 }
-if(count>0)
+if(length==count)
 {
 console.log("yes it is a palindrome")}
 else{
